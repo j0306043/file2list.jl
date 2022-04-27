@@ -9,6 +9,6 @@ end
 
 function file_to_list(file_name)
     open(file_name, "r") do f
-        [(Meta.parse(line) |> eval) for line in eachline(f) if line[1] != '#']
+        [(Meta.parse(line) |> eval) for line in eachline(f) if line[begin] != '#']
     end
 end
