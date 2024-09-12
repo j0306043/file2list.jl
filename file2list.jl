@@ -1,7 +1,7 @@
-function list_to_file(lst,file_name)
+function list_to_file(lst,file_name; typeinfo=Nothing)
     open(file_name, "w") do f
         for elem in lst
-            show(f, elem)
+            show(IOContext(f, :typeinfo => typeinfo), elem)
 	    print(f, '\n')
 	end
     end
