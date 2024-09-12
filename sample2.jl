@@ -9,4 +9,4 @@ println("See two files: sample_write_mixed_array_with_any.txt and sample_write_m
 lis2=file_to_list("sample_read_tuple.txt")
 println("lis2=",lis2)
 list_to_file(lis2,"sample_write_tuple.txt")
-println("See sample_write_tuple.txt. This is a good practice for Julia.")
+println("See sample_write_tuple.txt.")

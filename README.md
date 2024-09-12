@@ -49,7 +49,7 @@ lis1とlis2が一致している様子を表しています。
 lis1=Vector{Any}[[[0, 5], 100], [[8, 2], 300], [[3, 8], 200]]
 See two files: sample_write_mixed_array_with_any.txt and sample_write_mixed_array_without_any.txt.
 lis2=[([0, 5], 100), ([8, 2], 300), ([3, 8], 200)]
-See sample_write_tuple.txt. This is a good practice for Julia.
+See sample_write_tuple.txt.
 ```
 
 読み込む例がlis1([sample_read_mixed_array.txt](https://github.com/j0306043/file2list.jl/blob/master/sample_read_mixed_array.txt))のように、配列の要素が型が混在した配列の場合、list_to_fileで書き出したとき、Anyという型表記が書き込まれます(実行結果のsample_write_mixed_array_with_any.txtを見てみてください)。
