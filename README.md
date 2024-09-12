@@ -18,7 +18,7 @@ Juliaのリストの表現に近い形でリストをファイルに書き出し
 
 # 使い方
 
-使い方の例として、[sample.jl](https://github.com/j0306043/file2list.jl/blob/main/sample.jl)をご覧ください。
+使い方の例として、[sample.jl](https://github.com/j0306043/file2list.jl/blob/master/sample.jl)をご覧ください。
 
 ## file_to_list(file_name)
 
