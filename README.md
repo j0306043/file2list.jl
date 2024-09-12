@@ -55,7 +55,7 @@ See sample_write_tuple.txt. This is a good practice for Julia.
 読み込む例がlis1([sample_read_mixed_array.txt](https://github.com/j0306043/file2list.jl/blob/master/sample_read_mixed_array.txt))のように、配列の要素が型が混在した配列の場合、list_to_fileで書き出したとき、Anyという型表記が書き込まれます(実行結果のsample_write_mixed_array_with_any.txtを見てみてください)。
 これが鬱陶しいという場合は、:typeinfoに型を指定すると消せる場合があります。
 参考例は、[sample2.jl](https://github.com/j0306043/file2list.jl/blob/master/sample2.jl)をご覧ください。
-実行結果の、sample_write_mixed_array_with_any.txt と sample_write_mixed_array_without_any.txtが、:typeinfoに型を指定しなかった場合とした場合ですので、比べてみてください。
+実行結果の、sample_write_mixed_array_with_any.txt と sample_write_mixed_array_without_any.txtが、それぞれ:typeinfoに型を指定しなかった場合とした場合ですので、比べてみてください。
 :typeinfoに指定できるものは、IOContextの:typeinfoと同じです。内部的にIOContextに渡しているだけです。
 
 なお、要素の型が混在する場合は、配列を使うのではなく、lis2([sample_read_tuple.txt](https://github.com/j0306043/file2list.jl/blob/master/sample_read_tuple.txt))のようにタプルを使う方がJuliaとしては良い作法です。
